@@ -1,0 +1,51 @@
+html{
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    flex-direction: column;
+    background-color: #0aa8f8;
+
+}
+
+.header{
+    position: absolute;/*←絶対位置*/
+    left: 0;
+    top: 5%; /*下に固定*/
+    width: 100%;
+    text-align: center;
+    font-size: xx-small;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+}
+
+.slogan{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 8%;
+    padding: auto;
+    font-size: large;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+}
+
+.credit{
+    position: absolute;/*←絶対位置*/
+    left: 0;
+    bottom: 5%; /*下に固定*/
+    width: 100%;
+    text-align: center;
+    font-size: xx-small;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+}
