@@ -9,6 +9,15 @@ html{
 
 }
 
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .header{
     position: absolute;/*←絶対位置*/
     left: 0;
@@ -29,12 +38,37 @@ html{
     color: aliceblue;
 }
 
+.products_title{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 0px;
+}
+
+.products{
+text-align: center;
+font-size: xx-small;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+
 .slogan{
     text-align: center;
     vertical-align: middle;
     margin-top: 8%;
     padding: auto;
     font-size: large;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+}
+
+.contact{
+    position: static;
+    left: 0;
+    bottom: 10vh; /*下に固定*/
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
     font-family: 'Josefin Sans', sans-serif;
     color: aliceblue;
 }
