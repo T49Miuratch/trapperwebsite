@@ -18,10 +18,20 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+	user-drag: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+}
+
+li{
+    list-style:none;
+}
+
 .header{
     position: absolute;/*←絶対位置*/
     left: 0;
-    top: 5%; /*下に固定*/
+    top: 1vh;
     width: 100%;
     text-align: center;
     font-size: xx-small;
@@ -46,7 +56,7 @@ a:hover {
 }
 
 .products{
-text-align: center;
+text-align: left;
 font-size: xx-small;
 font-family: 'Josefin Sans', sans-serif;
 
@@ -73,10 +83,48 @@ font-family: 'Josefin Sans', sans-serif;
     color: aliceblue;
 }
 
+.trapper_menu_outer {
+    align-items: center;
+    text-align: center;
+    }
+
+.trapper_menu {
+    padding: 10px 20px;
+    }
+
+.trapper_menu_parent {
+    cursor: pointer;
+    }
+
+.trapper_menu_parent::before {
+    content: '+PRODUCTS+';
+    display: inline-block;
+    transform: rotate(-90deg);
+    transition: .4s;
+    }
+
+.trapper_menu_parent.active::before {
+    transform: rotate(0deg);
+    }
+
+.trapper_menu_child {
+    color: aliceblue;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    }
+
+.trapper_menu_child.active {
+    height: 4rem;
+    opacity: 1;
+    visibility: visible;
+    }
+
 .credit{
     position: absolute;/*←絶対位置*/
     left: 0;
-    bottom: 5%; /*下に固定*/
+    bottom: 1vh; /*下に固定*/
     width: 100%;
     text-align: center;
     font-size: xx-small;
